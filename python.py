@@ -61,3 +61,21 @@ removeList = secondList.remove("Iraq")  # return none
 
 print(f"removing list is: {secondList}")
 print(f"pop value is: {popList}")
+
+countries=["Germany","Italy","Canada","USA","UAE","China"]
+
+print(f"use in method to know something exist in array :{"Germany" in countries} ")
+print(f"index of one country is: {countries.index("China")}")
+print(f"count how many item in array: {countries.count("China")}")
+
+cities=["Tehran","Hamburg","Loa Angeles","A", "Las Vegas","New York City"]
+cities.sort()
+
+print(f"sort of array is{cities}")
+
+    
+print("3".join(["hel","low","my","dear"]))
+
+#produce List
+print(f"produce a list:{list(range(100,150))}")
+
