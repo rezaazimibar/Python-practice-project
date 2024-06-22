@@ -45,37 +45,84 @@
 
 # --------------------------List method-------------------------------------
 
-# adding method
-myNewList = ["apple", 343, False, "orange"]
-appendList = myNewList.append("USA")  #return none
-InsertList = myNewList.insert(2, "chine")  #return none
-extendList = myNewList.extend([343, 3232])  #return none
+# # adding method
+# myNewList = ["apple", 343, False, "orange"]
+# appendList = myNewList.append("USA")  #return none
+# InsertList = myNewList.insert(2, "chine")  #return none
+# extendList = myNewList.extend([343, 3232])  #return none
 
-print(f"my append list is: {appendList}")
-print(f"my append list is: {myNewList}")
+# print(f"my append list is: {appendList}")
+# print(f"my append list is: {myNewList}")
 
-# removing method
-secondList = ["Iran", "Iraq", "quieti"]
-popList = secondList.pop(0)     #return value
-removeList = secondList.remove("Iraq")  # return none
+# # removing method
+# secondList = ["Iran", "Iraq", "quieti"]
+# popList = secondList.pop(0)     #return value
+# removeList = secondList.remove("Iraq")  # return none
 
-print(f"removing list is: {secondList}")
-print(f"pop value is: {popList}")
+# print(f"removing list is: {secondList}")
+# print(f"pop value is: {popList}")
 
-countries=["Germany","Italy","Canada","USA","UAE","China"]
+# countries=["Germany","Italy","Canada","USA","UAE","China"]
 
-print(f"use in method to know something exist in array :{"Germany" in countries} ")
-print(f"index of one country is: {countries.index("China")}")
-print(f"count how many item in array: {countries.count("China")}")
+# print(f"use in method to know something exist in array :{"Germany" in countries} ")
+# print(f"index of one country is: {countries.index("China")}")
+# print(f"count how many item in array: {countries.count("China")}")
 
-cities=["Tehran","Hamburg","Loa Angeles","A", "Las Vegas","New York City"]
-cities.sort()
+# cities=["Tehran","Hamburg","Loa Angeles","A", "Las Vegas","New York City"]
+# cities.sort()
 
-print(f"sort of array is{cities}")
+# print(f"sort of array is{cities}")
 
     
-print("3".join(["hel","low","my","dear"]))
+# print("3".join(["hel","low","my","dear"]))
 
-#produce List
-print(f"produce a list:{list(range(100,150))}")
+# #produce List
+# print(f"produce a list:{list(range(100,150))}")
 
+#-------------------------------Dictionary-----------------------------------------------
+
+# amazonList={"pen":2,'bag':3,}
+# innerListDic=[
+#     {
+#         "li1":[3,2,1],
+#         "bol":True,
+#         "str":"my str"
+
+#     },
+#     {
+#         "li2":[3,7,1],
+#         "bol0":True,
+#         "str":"my str"
+
+#     },
+#     {
+#         "li3":[8,2,1],
+#         "bol":True,
+#         "str":"my str"
+
+#     }
+# ]
+
+# print(f"dictionary value is: {amazonList['bag']}")
+# print(f"inner document: {innerListDic[1]["li2"][1]}")
+
+# #dictionary key
+# dictionary1={
+#     232:"this is the number ",
+#     True:[34,23,"bool key"]
+# }
+
+# print(f"using number and bool key: {dictionary1[232]}")
+
+#-------------------------------------Dictionary method-------------------------------
+
+dictBasket={
+    "trash":20,
+    "accident":True,
+    "password":"hello world"
+}
+builtDict=dict(name="john")
+
+print(f"use get method: {dictBasket.get("tractor")}")
+print(f"use get method: {dictBasket.get("trash",2000)}")
+print(f"build a dictionary: {builtDict}")
