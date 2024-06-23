@@ -116,13 +116,63 @@
 
 #-------------------------------------Dictionary method-------------------------------
 
-dictBasket={
-    "trash":20,
-    "accident":True,
-    "password":"hello world"
-}
-builtDict=dict(name="john")
+# dictBasket={
+#     "trash":20,
+#     "accident":True,
+#     "password":"hello world"
+# }
+# builtDict=dict(name="john")
 
-print(f"use get method: {dictBasket.get("tractor")}")
-print(f"use get method: {dictBasket.get("trash",2000)}")
-print(f"build a dictionary: {builtDict}")
+# print(f"use get method: {dictBasket.get('tractor')}")
+# print(f"use get method: {dictBasket.get('trash',2000)}")
+# print(f"is there holy key in dictBasket: {"holy" in dictBasket}")
+# print(f"is there holy value in dictBasket: {20 in dictBasket.values()}")
+# print(f"build a dictionary: {builtDict}")
+# print(f"print dict.item: {dictBasket.items()}")
+
+# personal={
+#     'age':43,
+#     'name':"keith",
+#     'sex':True,
+# }
+
+# print(f"return fun:{personal.update({'sex':False})}")
+# print(f"return fun:{personal}")
+
+# personal.clear()
+
+# print(f"empty dictionary is: {personal}")
+
+#-------------------------------------------Tuple-----------------------------------
+
+# my_tuple=(34,"reza",True,21,1,0)
+# my_dict={(0,1):"this is tuple mention"}
+# x,y, *other=(2,3,5,6,7,8)
+# #index and count are the only method to tuple
+
+# print(f"print my tuple: {my_tuple}")
+# print(f"print my tuple: {0 in my_tuple}")
+# print(f"print object with tuple key: {my_dict[(0,1)]}")
+# print(other)
+
+#-------------------------------------------Set-----------------------------------------
+
+# my_set={3,5,5,2,3,1} #contain only uniq values
+# my_set.add(100)
+
+# print(my_set)
+
+# --------------------------------------Set method--------------------------------------------
+
+# my_set={3,5,2,1,6,7,8}
+# your_set={34,1,6,4,8,42,7,100}
+
+# print(f"set method difference: {my_set.difference(your_set)}")
+# print(f"set method discard: {my_set.discard(100)}") #remove 100 and return nothing
+# # print(f"set method difference update: {my_set.difference_update(your_set)}")
+# print(f"set method difference update: {my_set}")
+# print(f"set method intersection: {my_set.intersection(your_set)}") #you can use & instead intersection
+# print(f"set method union: {my_set.union(your_set)}")#you can use | instead union
+# #is disjoint if they are total not equal return true
+# #issubset is for if they are equal
+# #issuperset is for if they are qual
