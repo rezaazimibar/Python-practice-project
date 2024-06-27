@@ -104,13 +104,48 @@
 
 #------------------------------------------while-loop-----------------------------------
 
-i=0
-while i<50:
-    print(i)
-    i +=1
-else:
-    print("job is done")
+# i=0
+# while i<50:
+#     print(i)
+#     i +=1
+# else:
+#     print("job is done")
 
-while True:
-    print("infinite loop bread")
-    break       #so important if it is not we have infinite loop that dangerous
+# while True:
+#     print("infinite loop bread")
+#     break       #so important if it is not we have infinite loop that dangerous
+
+# while True :
+#     result= input("say something: ")
+#     if result=="goodbye":
+#       break
+
+#----------------------------------break-continue-pass-----------------------------
+
+# for item in "hi my name is reza":
+#     print("i love you and continue")
+#     continue #go to the up first of the loop
+#     print("hi there")
+#     pass #do nothing
+
+#---------------------------------------exercise--------------------------------------
+
+picture=[
+    [1,1,1,0,1,1,1],
+    [1,0,1,1,0,0,1],
+    [1,0,1,1,0,0,1],
+    [1,0,1,1,0,0,1],
+    [1,0,1,1,0,0,1],
+    [1,0,1,1,0,0,1],
+    [1,0,1,1,0,0,1],
+    [1,0,1,1,0,0,1],
+]
+
+for item in picture:
+    for items in item:
+        if items==1:
+            print("*",end='')
+        else:
+            print(' ',end='')    
+    print('')
+    
