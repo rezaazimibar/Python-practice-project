@@ -130,22 +130,41 @@
 
 #---------------------------------------exercise--------------------------------------
 
-picture=[
-    [1,1,1,0,1,1,1],
-    [1,0,1,1,0,0,1],
-    [1,0,1,1,0,0,1],
-    [1,0,1,1,0,0,1],
-    [1,0,1,1,0,0,1],
-    [1,0,1,1,0,0,1],
-    [1,0,1,1,0,0,1],
-    [1,0,1,1,0,0,1],
-]
+# picture=[
+#     [1,1,1,0,1,1,1],
+#     [1,0,1,1,0,0,1],
+#     [1,0,1,1,0,0,1],
+#     [1,0,1,1,0,0,1],
+#     [1,0,1,1,0,0,1],
+#     [1,0,1,1,0,0,1],
+#     [1,0,1,1,0,0,1],
+#     [1,0,1,1,0,0,1],
+# ]
 
-for item in picture:
-    for items in item:
-        if items==1:
-            print("*",end='')
-        else:
-            print(' ',end='')    
-    print('')
-    
+# for item in picture:
+#     for items in item:
+#         if items:
+#             print("*",end='')
+#         else:
+#             print(' ',end='')    
+#     print('')
+
+#---------------------------------------exercise-----------------------------------
+
+# some_list=['b','d','g','e','d','a','a']
+# my_list=[]
+
+# for items in some_list:
+#     if some_list.count(items)>1:
+#         if items not in my_list:
+#             my_list.append(items)
+
+# print(my_list)
+
+#-----------------------------------functions---------------------------------------
+
+def say_hello():
+    print("hello")
+
+say_hello()
+print(say_hello())
