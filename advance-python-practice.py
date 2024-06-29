@@ -168,3 +168,9 @@ def say_hello():
 
 say_hello()
 print(say_hello())
+
+def say_inParameter(name,favor):
+    print(f"hi {name} and you are the best in {favor}")
+
+
+say_inParameter("reza","basketball")
