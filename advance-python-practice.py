@@ -174,3 +174,17 @@ def say_inParameter(name,favor):
 
 
 say_inParameter("reza","basketball")
+
+def logic_method(name,age,License):
+    if age>18 and License=="yes":
+        print(f"mr/mss {name} you can drive thats ok")
+    elif age>18 or License=="yes":
+        print(f"sorry dude you can not drive")
+    else:
+        print("you and play with your toys")
+    return -1
+
+name=input("your name is: ")
+age=int(input("your age is: "))
+lice=input("do you have license: ")
+print(logic_method(name,age,lice))
