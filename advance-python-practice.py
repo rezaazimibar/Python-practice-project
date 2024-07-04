@@ -163,28 +163,46 @@
 
 #-----------------------------------functions---------------------------------------
 
-def say_hello():
-    print("hello")
+# def say_hello():
+#     print("hello")
 
-say_hello()
-print(say_hello())
+# say_hello()
+# print(say_hello())
 
-def say_inParameter(name,favor):
-    print(f"hi {name} and you are the best in {favor}")
+# def say_inParameter(name,favor): #parameter
+#     print(f"hi {name} and you are the best in {favor}")
 
 
-say_inParameter("reza","basketball")
+# say_inParameter("reza","basketball") #position arguments
 
-def logic_method(name,age,License):
-    if age>18 and License=="yes":
-        print(f"mr/mss {name} you can drive thats ok")
-    elif age>18 or License=="yes":
-        print(f"sorry dude you can not drive")
-    else:
-        print("you and play with your toys")
-    return -1
+# #default parameters that allow us to give them default value
+# def logic_method(name='no name',age='2',License='False  '): 
+#     if age>18 and License=="yes":
+#         print(f"mr/mss {name} you can drive thats ok")
+#     elif age>18 or License=="yes":
+#         print(f"sorry dude you can not drive")
+#     else:
+#         print("you and play with your toys")
+#     return -1
 
-name=input("your name is: ")
-age=int(input("your age is: "))
-lice=input("do you have license: ")
-print(logic_method(name,age,lice))
+# name=input("your name is: ")
+# age=int(input("your age is: "))
+# lice=input("do you have license: ")
+
+# #key word argument that allow us to give argument in disorder way
+# print(logic_method(name=name,age=age,License=lice))
+
+#---------------------------------return---------------------------------------
+
+def Sumer(x1,x2):
+    z=x1+x2
+    return z
+
+print(Sumer(32,Sumer(10,10)))
+
+def outerFunc(num1,num2):
+    def innerFunc(n1,n2):
+        return n1+n2
+    return innerFunc(num1,num2)
+
+print(outerFunc(2,2))
