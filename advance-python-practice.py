@@ -194,15 +194,85 @@
 
 #---------------------------------return---------------------------------------
 
-def Sumer(x1,x2):
-    z=x1+x2
-    return z
+# def Sumer(x1,x2):
+#     z=x1+x2
+#     return z
 
-print(Sumer(32,Sumer(10,10)))
+# print(Sumer(32,Sumer(10,10)))
 
-def outerFunc(num1,num2):
-    def innerFunc(n1,n2):
-        return n1+n2
-    return innerFunc(num1,num2)
+# def outerFunc(num1,num2):
+#     def innerFunc(n1,n2):
+#         return n1+n2
+#     return innerFunc(num1,num2)
 
-print(outerFunc(2,2))
+# print(outerFunc(2,2))
+
+#--------------------------------method-vs-function--------------------------------
+
+# #function
+# max()
+# print()
+# list()
+
+# def doNothing():
+#     pass
+
+
+# #method
+# "hi this is ".capitalize()
+# "wha is that".count()
+
+#-------------------------------docstring------------------------------
+
+# def printer(a):
+#     '''this is just a printer function that print argument
+#     '''
+#     print(a)
+
+# printer("!!!!!!!!!!!!")
+
+# help(len)
+# print(f"print information of len document: {len.__doc__}")
+
+#-------------------------------args--kwargs-------------------------------
+
+# def sup_func(*args): #we can use it when we have multi argument
+#     print(*args)
+#     return sum(args)
+
+# print(sup_func(3,2,5,5))
+
+# def sup_func1(**kwargs): #we can use it when we give it a value with key word
+#     print(kwargs)
+
+#RULE: params, *args, default parameters, **kwargs
+
+# sup_func1(num1=2,num2=4,num3=5)
+
+# dictionary={'age':34,'num':32}
+# total=0
+# for item in dictionary.values():
+#     total=total+item
+# print(total)
+
+#--------------------------------exercise------------------------------------
+
+# def highest_even(list):
+#     big=0
+#     for item in list:
+#         if item>big and item%2==0:
+#             big =item
+#         else:
+#             pass
+#     print(big)
+
+# highest_even([10,103,2,5,4,2,100,101])
+
+#-----------------------------walrus-operator--------------------------------
+
+string="helloooooooooo"
+
+while((n := len(string))>1):
+    print(n)
+    string=string[:-1]
+    print(string)
