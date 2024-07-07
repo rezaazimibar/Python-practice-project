@@ -270,9 +270,35 @@
 
 #-----------------------------walrus-operator--------------------------------
 
-string="helloooooooooo"
+# string="helloooooooooo"
 
-while((n := len(string))>1):
-    print(n)
-    string=string[:-1]
-    print(string)
+# while((n := len(string))>1):
+#     print(n)
+#     string=string[:-1]
+#     print(string)
+
+#------------------------------global------------------------------------------
+
+# total=0
+
+# def counter():
+#     global total 
+#     total += 1
+#     print(total) 
+
+# counter()
+# counter()
+# counter()
+# counter()
+#we can also do some thing like below(recommended)
+
+# total=0
+
+# def counter(total):
+#     total+=1
+#     return total
+
+# print(counter(counter(counter(total))))
+
+#nonelocal we can use it
+#  when we want to do not use another variable in inner function
